@@ -13,3 +13,6 @@ The files in this project contain:
  - Functions
  - Graphing
  - Tips & tricks
+
+## To-Do ##
+If you would like to contribute to this repository, check the 'issues' tab to see what things still need to be added
