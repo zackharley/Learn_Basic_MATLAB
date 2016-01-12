@@ -1,6 +1,6 @@
 %% Clean up from previous section
-clc;
-clear;
+clc; % see Tips & Tricks for more info
+clear; % see Tips & Tricks for more info
 
 %% This is a header comment. This will not be computed by the MATLAB compiler.
 % This is a normal comment. 
@@ -42,7 +42,7 @@ v_sub = a - b; % Variable subtraction
 v_mult = a * b; % Variable multiplication
 v_div = a / b; % Variable division
 
-% OUTPUTS
+% OUTPUTS (ignore these for now)
 fprintf('nosup = %d\n',nosup);
 fprintf('add = %d\n',add);
 fprintf('sub = %d\n',sub);
@@ -82,14 +82,16 @@ fprintf(2,'\nDisplaying to the command line\n');
 % Printing to seperate lines IMPROPERLY
 fprintf('This is line 1.');
 fprintf('This is line 2.');
-% Printing to seperate lines PROPERLY. '\n' is a line break.
+% Printing to seperate lines PROPERLY. 
+% '\n' is a linefeed character. This tells the compiler to end the current line and move down to the next one.
 fprintf('\n');
 fprintf('This is line 1.\n');
 fprintf('This is line 2.\n');
 
 fprintf('I printed an integer: %d\n', add); % Print an integer
-%fprintf('I printed a string: "%s"\n', string); % Print a string
-fprintf('I printed a float: %.2f\n', div); % Print a float. Specify accuracy
+fprintf('I printed a string: "%s"\n', string); % Print a string
+fprintf('I printed a float: %.2f\n', div); % Print a floating point (real number with decimal places). 
+% NOTE: You can specify the number of decimal places you want to display using statments such as '.2f'. This statement shows two numbers AFTER THE DECIMAL.
 fprintf('I printed an apostrophe: Queen''s\n'); % Print an apostrophe
 
 %% Solving equations
@@ -203,8 +205,7 @@ hold off
 % COMMAND WINDOW
 % 'ans' gives the most recent answer
 % 'clc' clears the command window
+% 'clear' clears the memory of any declared variables, arrays, etc
 
 % USEFUL HELP FILES
 % Search 'elfun' for help with stuff like sin, cos, exp, etc
-
-
